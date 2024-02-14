@@ -1,9 +1,19 @@
+// NAV
 gsap.fromTo(
   ".nav-bar",
   { opacity: 0, yPercent: -10, duration: 1 },
   { yPercent: 0, opacity: 1 },
   ">"
 );
+
+// TEXT
+gsap.fromTo(
+  ".text-header",
+  { opacity: 0 },
+  { opacity: 1, duration: 0.1, stagger: 1 },
+  ">"
+);
+
 gsap.fromTo(".header-img", { opacity: 0, duration: 1 }, { opacity: 1 }, ">");
 
 gsap.fromTo(
@@ -131,13 +141,6 @@ gsap.fromTo(
   "#light-green_4",
   { opacity: 0 },
   { opacity: 1, duration: 0.1 },
-  ">"
-);
-// TEXT
-gsap.fromTo(
-  ".text-header",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1, stagger: 1 },
   ">"
 );
 

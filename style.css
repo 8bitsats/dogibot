@@ -48,11 +48,12 @@ body {
 }
 
 .header-img {
-  /* width: 400px; */
   height: auto;
   border: 3px solid gray;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0;
+
+  order: 1;
 }
 
 .address-heading {
@@ -62,6 +63,7 @@ body {
 .address {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .copy-icon {
@@ -72,7 +74,7 @@ body {
   .container {
     width: 90%;
     margin: 0 auto;
-    padding: 50px 0px;
+    padding: 50px 20px;
   }
 
   .header-nft-buy {
@@ -81,7 +83,7 @@ body {
   }
 
   .header-nft-buy-text {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     width: 100%;
   }
 
