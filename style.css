@@ -77,6 +77,12 @@ body {
 
   .header-nft-buy {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .header-nft-buy-text {
+    font-size: 0.6px;
+    width: 100%;
   }
 
   .header-img {
