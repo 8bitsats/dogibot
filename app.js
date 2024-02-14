@@ -10,7 +10,7 @@ gsap.fromTo(
 gsap.fromTo(
   ".text-header",
   { opacity: 0 },
-  { opacity: 1, duration: 0.1, stagger: 1 },
+  { opacity: 1, duration: 0.05, stagger: 1 },
   ">"
 );
 
