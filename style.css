@@ -74,7 +74,7 @@ body {
   .container {
     width: 90%;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 50px 10px;
   }
 
   .header-nft-buy {
@@ -85,6 +85,11 @@ body {
   .header-nft-buy-text {
     font-size: 0.5rem;
     width: 100%;
+  }
+
+  .copy-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .header-img {
