@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="img/IMG_4536.jpg" />
+    <script defer src="/app.js"></script>
+    <title>Dogibot</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav">
+            <a class="nav-bar" href="/index.html">HOME</a>
+            <a class="nav-bar" href="about-us.html"> ABOUT US</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header-nft-buy-submit">
+          <div class="header-nft-buy-text">
+            <form id="form">
+              <div class="field">
+                <label for="from_name">Twitter Handle</label>
+                <input type="text" name="from_name" id="from_name" />
+              </div>
+              <!-- <div class="field">
+                <label for="to_name">to_name</label>
+                <input type="text" name="to_name" id="to_name">
+              </div> -->
+              <div class="field">
+                <label for="message">handle</label>
+                <input type="text" name="message" id="message" />
+              </div>
+              <!--   <div class="field">
+                <label for="reply_to">reply_to</label>
+                <input type="text" name="reply_to" id="reply_to">
+              </div> -->
+
+              <input type="submit" id="button" value="Send Email" />
+            </form>
+
+            <script
+              type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+            ></script>
+
+            <script type="text/javascript">
+              emailjs.init("MXNhQZIP-EhC2sP-n");
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+      integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  </body>
+</html>
