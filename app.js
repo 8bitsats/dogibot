@@ -144,6 +144,24 @@ gsap.fromTo(
   ">"
 );
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".copy-icon").addEventListener("click", function () {
+    var addressElement = document.querySelector(".address h3");
+    var address = addressElement.textContent.trim();
+
+    // Create a temporary textarea to copy text to clipboard
+    var tempInput = document.createElement("textarea");
+    tempInput.value = address;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    // Alert user
+    alert("Address copied to clipboard: " + address);
+  });
+});
+
 // FORM
 
 const btn = document.getElementById("button");
@@ -166,22 +184,4 @@ document.getElementById("form").addEventListener("submit", function (event) {
       alert(JSON.stringify(err));
     }
   );
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".copy-icon").addEventListener("click", function () {
-    var addressElement = document.querySelector(".address h3");
-    var address = addressElement.textContent.trim();
-
-    // Create a temporary textarea to copy text to clipboard
-    var tempInput = document.createElement("textarea");
-    tempInput.value = address;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-
-    // Alert user
-    alert("Address copied to clipboard: " + address);
-  });
 });
