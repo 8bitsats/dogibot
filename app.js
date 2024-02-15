@@ -16,134 +16,19 @@ gsap.fromTo(
 
 gsap.fromTo(".header-img", { opacity: 0, duration: 1 }, { opacity: 1 }, ">");
 
-gsap.fromTo(
-  "#little-block",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block_2",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block_3",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block_4",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block_5",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block_6",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block_2",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block_3",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block_4",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block_5",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#yellow-block_5",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#rectangle-block",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#rectangle-block_2",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block-light-blue",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block-light-blue_2",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block-light-blue_3",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#little-block-light-blue_4",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo("#light-green", { opacity: 0 }, { opacity: 1, duration: 0.1 }, ">");
-gsap.fromTo(
-  "#light-green_2",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#light-green_3",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
-gsap.fromTo(
-  "#light-green_4",
-  { opacity: 0 },
-  { opacity: 1, duration: 0.1 },
-  ">"
-);
+// SLIDER
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
 
+function showSlide() {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}
+
+setInterval(showSlide, 3000);
+
+//
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".copy-icon").addEventListener("click", function () {
     var addressElement = document.querySelector(".address h3");
