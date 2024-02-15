@@ -111,6 +111,11 @@ input[type="submit"] {
   color: #fff; /* Text color */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.field input::placeholder {
+  font-family: inherit !important; /* Use !important to override other styles */
 }
 
 input[type="submit"]:hover {
